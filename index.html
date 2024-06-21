@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb1d09d3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="P1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <ul>SAGHEER AHAMED</ul> From Bangalore</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="x1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>As a passionate software engineer, I am driven by an insatiable curiosity and eagerness to embrace new challenges and technologies. My journey in software development has been characterized by a relentless pursuit of knowledge and skill acquisition. I have cultivated expertise in a diverse array of technologies including HTML, CSS, JavaScript, SQL, Bootstrap, Angular, and various data structures. These tools not only enable me to build robust, scalable solutions but also fuel my enthusiasm for tackling complex problems and creating innovative solutions. I thrive in dynamic environments where I can apply my skills to deliver impactful solutions that meet both user needs and business objectives. My dedication to continuous learning ensures that I stay at the forefront of industry trends, always seeking opportunities to expand my knowledge and refine my craft as a software engineer.</p>
+                    
+                    <div class="tab-tittles">
+                        <div class="tab-links active-links" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links"  onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links"  onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web Application</li>
+                            <li><span>AI</span><br>Maching Learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Udemy technical rounds test</li>
+                            <li><span>2023</span><br>Bizotic Crash Coarse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Udemy</li>
+                            <li><span>AI</span><br>Karunadu pvt lmt</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art and science of creating visually appealing and functional websites. It encompasses a broad range of disciplines, from layout and typography to user experience and interactive design. Effective web design not only focuses on aesthetics but also considers usability, accessibility, and the overall user journey. It involves understanding the balance between creativity and technical constraints, aiming to deliver a seamless and engaging experience across different devices and platforms. A well-crafted web design not only attracts and retains visitors but also communicates a brand’s message effectively, ultimately contributing to the success of businesses and organizations in the digital age.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) and UX (User Experience) design are crucial aspects of creating digital products that are both visually appealing and user-friendly. UI design focuses on the look and feel of the interface, including elements such as colors, typography, and overall aesthetics. It aims to create a visually pleasing and consistent experience that aligns with the brand's identity while ensuring ease of use for the user. On the other hand, UX design emphasizes the overall experience of the user when interacting with the product. It involves understanding user behaviors, conducting research, and designing intuitive navigation and interactions that facilitate a seamless journey from start to finish. Together, UI and UX design work hand in hand to create digital experiences that not only meet user needs but also delight and engage them, fostering long-term satisfaction and loyalty.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design is the process of conceptualizing, defining, and creating the visual and functional aspects of mobile applications. It involves a combination of UI (User Interface) design, which focuses on the appearance and interactive elements of the app, and UX (User Experience) design, which concentrates on the overall usability and satisfaction of the user during their interaction with the app. App design requires careful consideration of factors such as platform guidelines, screen sizes, and user expectations to ensure a cohesive and intuitive experience across different devices. Successful app design not only prioritizes aesthetics and usability but also aims to achieve business goals and enhance user engagement, ultimately contributing to the app's effectiveness and success in the competitive app marketplace.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>This website is the clone of the Amazon which is made from Html & CSS </p>
+                        <a href="https://github.com/Sagheer361/web-development" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Social Sphere</h3>
+                        <p>Welcome to Social Sphere, a powerful web app designed to streamline the management of your social media accounts, specifically LinkedIn and YouTube. With Social Sphere, you can effortlessly manage your content and stay organized, enhancing your social media efficiency and impact. </p>
+                        <a href="https://github.com/Sagheer361/wruth_wear" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Wruth Wear</h3>
+                        <p>WearTruth, an enriching e-commerce venture, stands out in its dedication to delivering a diverse range of Christian-themed products. The apparel collection showcases creatively designed shirts, each adorned with meaningful scriptures, quotes, and symbols. The mug selection features inspiring messages and imagery, perfect for uplifting one's spirit during daily routines. Sweatshirts, embodying comfort and style, display elegant Christian motifs, providing warmth both physically and spiritually. WearTruth's accessory line complements the ensemble, featuring items like bracelets, necklaces, and hats, all intricately crafted with Christian symbolism. The platform fosters a sense of community by encouraging user-generated content, allowing customers to share their faith-inspired stories and experiences. With a commitment to quality, WearTruth ensures that each product serves as a meaningful expression of faith in everyday life. </p>
+                        <a href="https://github.com/Sagheer361/wruth_wear" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sagheerahamed2340@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9986729841</p>
+                    <div class="social-icon">
+                        <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="www.linkedin.com/in/sagheer-ahamed" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sagheer361" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Sagheer2024_resume_bangalore.pdf" download class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="emali" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Sagheer. <i class="fa-solid fa-heart"></i> 9986729841 Bangalore</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXFs_zFzOy6cgfD2FCmWzIO42sz2qNOq9QEC_JjGMCwgk0BuJOHi_WvecPoDzoxO69/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg") 
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
